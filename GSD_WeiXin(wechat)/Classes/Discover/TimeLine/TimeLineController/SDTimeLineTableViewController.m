@@ -69,7 +69,7 @@ static CGFloat textFieldH = 40;
     [super viewDidLoad];
     
     //LEETheme 分为两种模式 , 独立设置模式 JSON设置模式 , 朋友圈demo展示的是独立设置模式的使用 , 微信聊天demo 展示的是JSON模式的使用
-    
+    /*
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"日间" style:UIBarButtonItemStyleDone target:self action:@selector(rightBarButtonItemAction:)];
     
     rightBarButtonItem.lee_theme
@@ -81,6 +81,7 @@ static CGFloat textFieldH = 40;
         
         item.title = @"日间";
     });
+    */
     
     //为self.view 添加背景颜色设置
     
@@ -88,7 +89,7 @@ static CGFloat textFieldH = 40;
     .LeeAddBackgroundColor(DAY , [UIColor whiteColor])
     .LeeAddBackgroundColor(NIGHT , [UIColor blackColor]);
     
-    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+    //self.navigationItem.rightBarButtonItem = rightBarButtonItem;
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
@@ -119,7 +120,7 @@ static CGFloat textFieldH = 40;
     }];
     
     SDTimeLineTableHeaderView *headerView = [SDTimeLineTableHeaderView new];
-    headerView.frame = CGRectMake(0, 0, 0, 260);
+    headerView.frame = CGRectMake(0, 0, 0, 200);
     self.tableView.tableHeaderView = headerView;
     
     //添加分隔线颜色设置
